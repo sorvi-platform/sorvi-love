@@ -1,0 +1,56 @@
+.{
+    .name = .sorvi_love,
+    .version = "0.0.1",
+    .dependencies = .{
+        .sorvi = .{
+            .path = "../sorvi",
+        },
+        .sorvi_SDL3 = .{
+            .url = "git+https://github.com/sorvi-platform/sorvi-SDL3.git#03abab5dd63fb3d0ae2275a4487b73a095eda28b",
+            .hash = "SDL3-3.4.0-NJYZ8MjxAACcYNz-ku62OGliCGvfA5qTuLUeWQZKEV1Y",
+        },
+        .sorvi_physfs = .{
+            .url = "git+https://github.com/sorvi-platform/sorvi-physfs.git#6d59e167cb3406ee0e238e4c19ed2ea8553d69e4",
+            .hash = "sorvi_physfs-3.2.0-bg9QqXoJAAC-Atmx_R5FzOw7JKuMAIAxes20X8mZvgAt",
+        },
+        .love2d = .{
+            .url = "git+https://github.com/GasInfinity-Forks/love.git?ref=sorvi#e092a3e7c1357c80565f5b0aeebdb2590f383d4f",
+            .hash = "N-V-__8AAGZxiALg-ahRQ86ofBc43Oo1sTK4ls4Sbe7V2ulo",
+        },
+        .openal = .{
+            .url = "git+https://github.com/sorvi-platform/openal-soft.git#d49a5721b50b837e4069b76e7cdbabe378c10174",
+            .hash = "openal-1.25.0-au8osJggAAAlU6WQAO7AIJqWsIkXHXVamdFz2jvRoudw",
+        },
+        .freetype = .{
+            .url = "git+https://github.com/allyourcodebase/freetype.git#884fd2235e6ae1ec4306eda30b3259f20930ed2e",
+            .hash = "freetype-2.14.3-C3-WdXSKAAB-kHs4qgRoeoFnRkNQn6M_SSlUGZ6ywgBQ",
+        },
+        .harfbuzz = .{
+            .url = "git+https://github.com/allyourcodebase/harfbuzz.git#d055840ecefefcd57f5ddeb2fa8c83fafed1a40b",
+            .hash = "harfbuzz-14.1.0-Ip1VAuGZAAC1jdxPHOMPoHyi-50Hm_q4bveaVflELHGw",
+        },
+        .libvorbis = .{
+            .url = "git+https://github.com/sorvi-platform/libvorbis.git#ad5eb8860c2bce8ccfc2f76cec489af44a275514",
+            .hash = "libvorbis-1.3.8-4-h_AypU0dJgDWZWcJybC_3ldSZiK2v4OFa0HXpdSc3QHO",
+        },
+        .zlib = .{
+            .url = "git+https://github.com/allyourcodebase/zlib.git#d3b5519d3b73616a6bfece0712f080029d2a9244",
+            .hash = "zlib-1.3.2-ZZQ7lc8NAAAHm9MDfplvwoesXvk4tVm6VCsiI8KnIbT0",
+        },
+        .lua = .{
+            .url = "https://lua.org/ftp/lua-5.1.5.tar.gz",
+            .hash = "N-V-__8AABAhDAAIlXL7OA-0Z5sWQh_FOFGoImvOvJzkRGOg",
+        },
+        .theora = .{
+            .url = "git+https://github.com/sorvi-platform/theora/#456394d53709e0d41134b730fbbdf6dd405cd708",
+            .hash = "theora-0.0.1-s27QsPkeAABdCHlF_2jxwF3IA-mXCYVcS3X6pJfSEDav",
+        },
+        .modplug = .{
+            .url = "git+https://github.com/sorvi-platform/modplug#aec6803694c4a3b081846e73f639a22ab29d68ae",
+            .hash = "modplug-0.0.1-crEZ_FQXAAAeEXkriVJYbihMi37d2Z9uPcUH-MKHGPxz",
+        },
+    },
+    .minimum_zig_version = "0.16.0",
+    .paths = .{""},
+    .fingerprint = 0x43a212a75568dc5c,
+}
