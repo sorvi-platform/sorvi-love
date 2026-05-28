@@ -25,11 +25,7 @@ pub fn build(b: *std.Build) void {
     const frontend = sorvi_dep.artifact("sorvi-frontend");
     const sdl3_dep = b.dependency("sorvi_SDL3", .{
         .target = starget,
-        .optimize = optimize, 
-    });
-    const physfs_dep = b.dependency("sorvi_physfs", .{
-        .target = starget,
-        .optimize = optimize, 
+        .optimize = optimize,
     });
     const al_dep = b.dependency("openal", .{
         .target = starget,
@@ -130,15 +126,17 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
         .link_libc = true,
         .sanitize_c = .off,
-        .root_source_file = physfs_dep.path("src/physfs_platform_sorvi.zig"),
+        .root_source_file = b.path("src/physfs_platform_sorvi.zig"),
     });
-    const physfs_files = b.addWriteFiles();
-    _ = physfs_files.addCopyDirectory(upstream.path("src/libraries/physfs/"), "", .{});
-    _ = physfs_files.addCopyDirectory(physfs_dep.path("src/"), "", .{});
-    physfs_mod.addCSourceFiles(.{
-        .root = physfs_files.getDirectory(),
-        .files = physfs_srcs,
-    });
+    {
+        var files = b.addWriteFiles();
+        _ = files.addCopyDirectory(upstream.path("src/libraries/physfs/"), "", .{});
+        _ = files.addCopyDirectory(b.path("src"), "", .{});
+        physfs_mod.addCSourceFiles(.{
+            .root = files.getDirectory(),
+            .files = physfs_srcs,
+        });
+    }
 
     const physfs = b.addLibrary(.{
         .name = "physfs",
