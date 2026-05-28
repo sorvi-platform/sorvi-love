@@ -9,10 +9,6 @@
             .url = "git+https://github.com/sorvi-platform/sorvi-SDL3.git#03abab5dd63fb3d0ae2275a4487b73a095eda28b",
             .hash = "SDL3-3.4.0-NJYZ8MjxAACcYNz-ku62OGliCGvfA5qTuLUeWQZKEV1Y",
         },
-        .sorvi_physfs = .{
-            .url = "git+https://github.com/sorvi-platform/sorvi-physfs.git#6d59e167cb3406ee0e238e4c19ed2ea8553d69e4",
-            .hash = "sorvi_physfs-3.2.0-bg9QqXoJAAC-Atmx_R5FzOw7JKuMAIAxes20X8mZvgAt",
-        },
         .love2d = .{
             .url = "git+https://github.com/GasInfinity-Forks/love.git?ref=sorvi#e092a3e7c1357c80565f5b0aeebdb2590f383d4f",
             .hash = "N-V-__8AAGZxiALg-ahRQ86ofBc43Oo1sTK4ls4Sbe7V2ulo",
