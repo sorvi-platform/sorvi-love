@@ -38,8 +38,8 @@
             .hash = "N-V-__8AABAhDAAIlXL7OA-0Z5sWQh_FOFGoImvOvJzkRGOg",
         },
         .theora = .{
-            .url = "git+https://github.com/sorvi-platform/theora/#456394d53709e0d41134b730fbbdf6dd405cd708",
-            .hash = "theora-0.0.1-s27QsPkeAABdCHlF_2jxwF3IA-mXCYVcS3X6pJfSEDav",
+            .url = "git+https://github.com/sorvi-platform/theora#bb118ee59420bb2cc76971992d1c1621996f3d97",
+            .hash = "theora-0.0.1-s27QsDYfAADQ61enx0WRT8rOvvBG6gBXmNlnmn5Op5TL",
         },
         .modplug = .{
             .url = "git+https://github.com/sorvi-platform/modplug#aec6803694c4a3b081846e73f639a22ab29d68ae",
