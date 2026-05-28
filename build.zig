@@ -21,7 +21,10 @@ pub fn build(b: *std.Build) void {
         return;
     }
 
-    const sorvi_dep = b.dependency("sorvi", .{});
+    const sorvi_dep = b.dependency("sorvi", .{
+        .target = target,
+        .optimize = optimize,
+    });
     const frontend = sorvi_dep.artifact("sorvi-frontend");
     const sdl3_dep = b.dependency("sorvi_SDL3", .{
         .target = starget,
